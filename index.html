@@ -3,556 +3,605 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>website</title>
+    <title>Document</title>
 </head>
-<style>
-    *{
-        padding: 0;
-        margin:0;
-      box-sizing: border-box;
-    }
-    .navbar-brand{
-        font-size: 2rem;
-        color: black;
-    }
-    .navbar-brand:hover{
-        color: green;
-    }
-    .nav-link{
-        margin-right: 10px;
-        margin-left: 10px;
-        color: black;
-        font-family: 'Rubik' sans-serif;
-        text-transform: uppercase;
-    }
-    .nav-link:hover{
-        color:black
-    }
-    .search{
-        height: 40px;
-        width: 100px;
-        border-radius: 60px;
-        margin-right: -35px;
-        outline: none;
-        font-family: 'Rubik' sans-serif;
-        border:2px solid rgb(246,26,92);
+<body>
+    <style>
+       
+        .image1{
+            float: left;
+            display: inline-flex; 
+        }
+        p{
+            text-align: justify;
+        }
+        .image3{
+            float:right;
+            display:inline-flex;
+            padding-top: 30px;
+          
+            
+        }
+        .main1{
+            float: left;
+            padding-right:100px;
+            padding-top:50px;
+        }
+        .main2{
+            float:right;
+            padding-left: 200px;
+            padding-top: 50px;
+        }
         
 
-    }
-    .btn0{
-        height: 40px;
-        width:80%;
-        outline: none;
-        border:none;
-        background: rgb(246,26,92) ;
-        color:white;
-        border-radius: 60px;
-        font-weight: 700;
-    }
-    .main{
-      background-image: url('https://veganuary.com/wp-content/uploads/2021/06/kids-lunchbox.jpg');
-      background-size: cover;
-      height: 100vh;
-      background-position: 50% 50%;
-      width:100%;
-    }
-    .main h1{
-      font-size: 4rem;
-      font-weight: 700; 
-      padding-top: 170px;
-    }
-    .btn1{
-      height: 45px;
-      width:25%;
-      border: none;
-      outline: none;
-      background-color: rgb(246,26,92);
-      color:white;
-      font-weight: 700;
-      border-radius: 60px;
+        .image4{
+            float:left;
+            display: inline-flex;
+            padding-top: 50px;
+            padding-left: 200px;
+         
+        }
+        .main1:hover{
+            color:rgb(64, 122, 160);
+        }
+        .main2:hover{
+            color:rgb(64, 122, 160);
+        }
+        .image6{
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        .image4{
+            float:left;
+            display: inline-flex;
+            padding-top: 50px;
+            padding-left: 200px;
+        }
+        .main3{
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+        .img{
+            padding-right: 50px;
+        }
+        .button{
+            padding-right:50px;
+            color:aqua
+        }
+        p{
+        text-align: justify;
+        }
+        .form{
+            display:flex;
+            flex-direction:column;
+            width:300px;
+            padding:100px;
+            border:1px solid skyblue;
+            border-radius:5px;
+            float:right;
+        }
+        input{
+            margin:5px;
+            height:35px;
+            padding:7px;
+        }
+        button{
+            height:70px;
+            margin:5px;
+            background-color: rgb(80, 80, 113);
+            border:none;
+            border-radius:5px;
+            color:aqua;
+        }
+        button:hover{
+            background-color: rgb(70, 82, 58);
+            color:aqua;
+        }
+      
+        .head{
+            position: relative;
+        }
+        .name{
+            color:aliceblue;
+            position: absolute;
+            top:10%;
+            left:45%;
+            transform:translate(-50%,-50%);
+            font-size:xx-large;
+            color:black;
+        }
+        .name1{
+            color:aliceblue;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            font-size:xx-large;
+        }
+        .main3{
+            color:aliceblue;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            font-size:xx-large;
 
-    }
-    .btn1:hover{
-       background-color: rgb(223, 15,17);
-       transition: 0.5s;
-    }
-    .h1{
-      font-weight: 700;
-    }
-    .card:hover{
-      box-shadow: -2px -1px 25px -4px rgba(0,0,0,0.75);
-      -webkit-box-shadow:-2px -1px 25px -4px rgba(0,0,0,0.75);
-      -moz-box-shadow:-2px -1px 25px -4px rgba(0,0,0,0.75);
-      transition: 0.5s;
-    }
-    .apple{
-      background-image:  url('https://www.kennethnleedds.com/images/2.png');
-      background-size: cover;
-      height:70vh;
-      width:100%;
-    }
-    .apple h1{
-      font-family: 'lobster', 'cursive';
-    }
-    .news{
-background-color: black; 
-color: white;  
- }
- .btn2{
-  height:45px;
-  width:100px;
-  background: white;
-  margin-left: 10px;
-  border: 2px solid white;
-  font-weight: 600;
- }
- .news input{
-  height:45px;
-  width:55%;
-  border: 2px solid white;
-  background: black;
-  outline: none;
-  color:white;
-  margin-top: 20px;
-  font-weight: 200;
+        }
+        .title{
+            color: rgb(20, 137, 137);
+            position: absolute;
+            left: 50%;
+            transform:translate(-50%,-50%);
+            font-size: xx-large;
+            justify-content: center;
+            align-items: center;
+            padding-top: 7%;
+        }
+        .card{
+            width: 250px;
+            margin:0 10px;
+            transition: 4s;
+        }
+        .card img:hover{
+            transition: scale(1.3);
+            z-index: 2;
+        }
+        *{
+            padding: 0%;
+            margin: 0%;
+            text-decoration:none;
+            list-style: none;
+            font-family: "work sans',sans-serif";
+            
 
- }
- .news::placeholder{
-  color:white;
- }
- .news p{
-  margin:0;
- }
- .nav-link:hover{
-     color:rgba(55, 18, 238, 0.903);
- }
+          
+        }
+        body{
+            background-color:azure;
+            height: 100px;
+        }
+        footer{
+            display:flex;
+            flex-direction: wrap;
+            margin-top: auto;
+            background-color: rgb(93, 89, 89);
+            padding:60px 10%;
+        }
+        .footer-col{
+            width: 25%;
+        }
+        .footer-col:hover{
+            color:aqua;
+
+        }
+        .footer-col-h4{
+            position: absolute;
+            left: 0%;
+            border-bottom: -6px;
+            height:2px;
+            width:40px;
+            color:aqua;
+        }
+        ul li a{
+            display:block;
+            font-size: 19px;
+            color:rgb(114, 98, 77);
+            text-decoration:none;
+            transition: 0.4s;
+        }
+        .links a:hover{
+            color: darkgrey;
+            background-color: bisque;
+        }
+        ul li a:hover{
+            color:aqua;
+            padding: left 2px;
+
+        }
+        .links a{
+            display: inline-block;
+            height: 44px;
+            color: rgb(47, 107, 159);
+            background-color: antiquewhite;
+            margin: 0%;
+            text-align: center;
+            line-height: 44px;
+            border-radius: 50%;
+            transition: 0.4s;
+        }
+        .cards{
+            width: 601px;
+            height: 400px;
+            background:#fff;
+            display: flex;
+        }
+       .card img:hover{
+        display:block;
+        transform: translateY(20px);
+       }
+       .row img{
+        top: 5px;
+       
+
+       }
+       .main3{
+            color:aliceblue;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            font-size:xx-large;
+        }
+     
+        input{
+            margin:5px;
+            height:35px;
+            padding:7px;
+        }
+       
+        .main{
+            float: right;
+            padding-inline-start: 5;
+            padding-left: 30px;
+        }
+       
+        .container{
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+       
+      
+       
+       
+       
+
+       
+      
+       
+        
+      
+    </style>
+</head>
+<body>
+
+<div class="head"> 
+    <div class="name">
+        <img src="https://cooking-healthy-food.web.app/assets/chf-logo-CG4Qoem8.svg">
+    </div>
+    <div class="name1">
+        <h1>LUXURY RESTURANT</h1>
+        <P>FEEL THE TASTE</P>
+        
+      
+   </div>
+   <div class="dis">    
+    <img src="https://visitlovran.com/wp-content/uploads/2021/12/75398119_409442123332250_3533931281928683520_n.jpg" height="600" width="1500">
+   </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+</div>
+<div class="container">
+    <div class="main">
+        <h1>DISCOVER</h1>
+        <h2>WHERE VERSION MEETS REALITY</h2>
+        <P>WHERE FLAVOUR MEETS ELEGANCE</P>
+        <p>experience the pinnacle of healthy food dining with our award winningrestaurant</p>
+        <p>where everyone wants to be for the healthy food and mind-blowing grilling</p>
+        <p>we typically serve the best and most delicious food and drinks prepared with high quality ingridents</p>
+        <p>That are maintained and cooked by our own expert chiefs</p>
+    </div>
+    <div class="row">
+        <div class="col-sm-4"><img src="https://cooking-healthy-food.web.app/assets/chef-DoewVM76.jpg" height="400" width="400"></div>
+    </div>
+</div>
+
+
+<div class="des">
+    <div class="title">
+        <h1>THE BEST PLACE OF CLUNINARY</h1>
+        <h1>OUR SPECIALISTS</h1>
+    </div>
+    <div class="img">
+        <img src="https://th.bing.com/th/id/R.ca62350d12edc080dc1d2f9666eb3fcd?rik=228nFtb5RHpApw&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f09%2fFree-Download-All-White-Background.jpg&ehk=6eUWGbLbl2R1kBLjJoSV5LxiC5%2fQH9mz%2bqVt93Aq2Ao%3d&risl=&pid=ImgRaw&r=0" height="100" width="1500"></div>
+    </div>
+    <div class="container">
+        <div class="row gy-3 my-3 p-0">
+            <div class="col-sm-4 col-md-4 col-lg-4 pt-2">
+                <div class="card" style="width: 20rem; padding: 10;">
+                    <img src="https://cooking-healthy-food.web.app/assets/nuddles-WXxGT01C.jpg" class="card-img-top" height="400" width="400" alt="...">
+                  </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4 pt-2">
+                <div class="card" style="width: 20rem; padding: 10;">
+                    <img src="https://cooking-healthy-food.web.app/assets/burger-aAn-1acf.jpg" class="card-img-top" height="400" width="400" alt="...">
+                  </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4 pt-2">
+                <div class="card" style="width: 20rem; padding: 10;">
+                    <img src="https://cooking-healthy-food.web.app/assets/salad-YpOHynzB.jpg"class="card-img-top" height="400" width="400" alt="...">
+                  </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row gy-3 my-3 p-0">
+                <div class="col-sm-4 col-md-4 col-lg-4 pt-2">
+                    <div class="card" style="width: 20rem;padding: 10;">
+                        <img src="https://cooking-healthy-food.web.app/assets/bread-dish-CDQx7IAd.jpg" class="card-img-top" height="400" width="400" alt="...">
+                      </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4 pt-2">
+                    <div class="card" style="width: 20rem; padding: 10;">
+                        <img src="https://cooking-healthy-food.web.app/assets/pasta-BpsDxSMd.jpg" class="card-img-top" height="400" width="400" alt="...">
+                      </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4 pt-2">
+                    <div class="card" style="width: 20rem; padding: 10;">
+                        <img src="https://cooking-healthy-food.web.app/assets/sandwich-BWlhHuDo.jpg"class="card-img-top" height="400" width="400" alt="...">
+                      </div>
+                </div>
+            </div>
+    <div class="des">
+        <div class="title">
+            <h1>EXPERIENCE DELIOUS MENU</h1>
+        </div>
+        <div class="img">
+            <img src="https://th.bing.com/th/id/OIP.J-g3QHxscKB2jqqi9osH9AHaEK?rs=1&pid=ImgDetMain" height="100" width="1500"></div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-md-4 col-lg-4 pt-2">
+                    <div class="card"  style="width: 20rem; padding: 10;">
+                        <img src="https://cooking-healthy-food.web.app/assets/dish-1-nYG5mcF-.png" class="card-img-top" height="300" width="400" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Grilled salmon salad</h5>
+                          <p class="card-text">savor the flavours of grilled salmon and fresh greens</p>
+                          <a href="#" class="btn btn-primary">$39</a> &nbsp &nbsp &nbsp &nbsp &nbsp;<i class="fa fa-star" aria-hidden="true"></i>4.4(2050)
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-3 col-md-4 col-lg-4 p-2">
+                    <div class="card"  style="width: 20rem; padding: 10;">
+                        <img src="https://cooking-healthy-food.web.app/assets/dish-2-pLH3ZX73.png" class="card-img-top" height="300" width="400" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">chilly chicken topped with sesame</h5>
+                          <p class="card-text">elevate your palate with teriyaki chicken and crisp cucumber</p>
+                          <a href="#" class="btn btn-primary">$29</a> &nbsp &nbsp &nbsp &nbsp &nbsp;<i class="fa fa-star" aria-hidden="true"></i>4.4(2050)
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-3 col-md-4 col-lg-4 p-2">
+                    <div class="card" style="width: 20rem; padding: 10;">
+                        <img src="https://cooking-healthy-food.web.app/assets/dish-3-B153rVif.png" class="card-img-top" height="300" width="400" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">pasta con le sarde</h5>
+                          <p class="card-text">evoke the mediterranean sun with every forkful</p>
+                          <a href="#" class="btn btn-primary">$29</a> &nbsp &nbsp &nbsp &nbsp &nbsp;<i class="fa fa-star" aria-hidden="true"></i>4.3(1080)
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-3 col-md-4 col-lg-4 p-0">
+                    <div class="card"  style="width: 20rem; padding: 2;">
+                        <img src="https://cooking-healthy-food.web.app/assets/dish-4-DWciFrk0.png" class="card-img-top" height="300" width="400" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">italian salad with fresh shrimp</h5>
+                          <p class="card-text">a fresh twist on italian seafood
+                            insalata di calamari</p>
+                          <a href="#" class="btn btn-primary">$24</a> &nbsp &nbsp &nbsp &nbsp &nbsp;<i class="fa fa-star" aria-hidden="true"></i>4.4(1050)
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-3 col-md-4 col-lg-4 p-0">
+                    <div class="card"  style="width: 20rem; padding: 2;">
+                        <img src="https://cooking-healthy-food.web.app/assets/dish-5-C4D_1wu4.png" class="card-img-top" height="300" width="400" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">tomato soup with broccoli</h5>
+                          <p class="card-text">comfort in a bowl:where earthy
+                            vegetables meet excoit spice
+                          </p>
+                          <a href="#" class="btn btn-primary">$19</a> &nbsp &nbsp &nbsp &nbsp &nbsp;<i class="fa fa-star" aria-hidden="true"></i>4.1(999)
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-3 col-md-4 col-lg-4 p-0">
+                    <div class="card"  style="width: 20rem; padding: 10;">
+                        <img src="https://cooking-healthy-food.web.app/assets/dish-6-BD2JvLZa.png" class="card-img-top" height="300" width="400" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Blueberry pan cake</h5>
+                          <p class="card-text">blueberry meets plamcot in perfect harmony</p>
+                          <a href="#" class="btn btn-primary">$30</a> &nbsp &nbsp &nbsp &nbsp &nbsp;<i class="fa fa-star" aria-hidden="true"></i>4.7(1125)
+                        </div>
+                      </div>
+                   </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-md-4 col-lg-4 p-0">
+                    <div class="card" style="width: 20rem; padding: 10;">
+                        <img src="https://cooking-healthy-food.web.app/assets/dish-7-CoaLC6Rw.png" class="card-img-top" height="300" width="400" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Stuffed bell papers with cooriender</h5>
+                          <p class="card-text">elevate your with our pepper perfection</p>
+                          <a href="#" class="btn btn-primary">$45</a> &nbsp &nbsp &nbsp &nbsp &nbsp;<i class="fa fa-star" aria-hidden="true"></i>4.6(1325)
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-md-4 col-lg-4 p-0">
+                    <div class="card"  style="width: 20rem; padding: 10;">
+                        <img src="https://cooking-healthy-food.web.app/assets/dish-8-DRzFmebn.png" class="card-img-top" height="300" width="400" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Stuffed bell papers with cooriender</h5>
+                          <p class="card-text">elevate your with our pepper perfection</p>
+                          <a href="#" class="btn btn-primary">$45</a> &nbsp &nbsp &nbsp &nbsp &nbsp;<i class="fa fa-star" aria-hidden="true"></i>4.6(1325)
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-3 col-md-4 col-lg-4 p-0">
+                    <div class="card"  style="width: 20rem; padding: 10;">
+                        <img src="https://cooking-healthy-food.web.app/assets/dish-9-JgJFOtTp.png" class="card-img-top" height="300" width="400" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Fresh cucumber and tofi sushi</h5>
+                          <p class="card-text">fresh sushi meets the opulence of red caviour</p>
+                          <a href="#" class="btn btn-primary">$39</a> &nbsp &nbsp &nbsp &nbsp &nbsp;<i class="fa fa-star" aria-hidden="true"></i>4.6(1325)
+                        </div>
+                      </div>
+                   </div>
+            </div>
+        </div> 
+    </div>
+ 
+    <div class="css">
+        <div class="main1">
+            <h1>DRINKS & BEVERAGES</h1></br>
+            </br>
+            <SPAN>
+                <h1>MOCKTAIL</h1>
+                <p>Blueberry/Pineapple Mint Refreshed/Margarita</p>
+            </SPAN>
+            <span>
+                <h1>FRUIT SHAKES</h1>
+                <p>Apple/Mango/Watermelon/Banana/Strawberry</p>
+            </span>
+            <span>
+                <h1>ALCOHOL</h1>
+                <P>Ember Whiskey/Crimson Tide Vodka/Horizon Rum</P>
+            </span>
+            <span>
+                <h1>SODA</h1>
+                <p>Cherry Wave/Berry Blast Soda/Mango Breeze Soda</p>
+            </span>
+        </div>
+            <div class="image3">
+                <img src="https://cooking-healthy-food.web.app/assets/drink-CBeAEB65.png" height="500" width="500">
+            </div>
+        </div>
+    </div>
+    <div class="css1">
+        <div class="image4">
+            <img src="https://cooking-healthy-food.web.app/assets/dessert-ClskfPBS.png" height="500" width="500">
+      <div class="main2">
+            <h2>CAKES & DESSERTS</h2></br>
+            </br>
+        <span>
+            <h1>CAKES</h1>
+            <p>velvet dream cake/chocolate decadence/strawberry cake</p>
+        </span>
+        <span>
+            <h1>MUFFINS</h1>
+            <p>mocha magic muffins/choco-chip/banana nut crunch</p>
+        <span>
+            <h1>DONETS</h1>
+            <P>blueberry burst/coconut paradise/caramel crunch rings</P>
+        </span>
+        <span>
+            <h1>ICE CREAM</h1>
+            <p>vanila bean bliss/coconut almond joy/butter scooh</p>
+        </span>
+    </div>
+    </div>
+    </div>
+    <div class="container">
+        <h1>RESERVATION
+            BOOK A TABLE </h1>
+            <div class="row">
+                <div class="col-sm-4"><img src="https://cooking-healthy-food.web.app/assets/contact-us-img-1-D0LPDRFL.png" height="400" width="300"></div>
+                <div class="col-sm-4"><img src="https://cooking-healthy-food.web.app/assets/contact-us-img-2-DEhcEN1l.png"  height="400" width="300"></div>
+                <div class="col-sm-4"><img src="https://cooking-healthy-food.web.app/assets/contact-us-img-3-Cqvn16ho.png"  height="400" width="500"></div> 
+            </div>
+    </div>
+    <div class="col-sm-6 my-5 text-start">
+        <form> 
+            <div class="row mb-3 text-start">
+            <div class="col-md-6"> 
+            <label for="inputName" class="form-label">Name</label> 
+            <input type="text" class="form-control" id="inputName"> 
+            </div> 
+            <div class="col-md-6"> 
+            <label for="inputEmail" class="form-label">Email address</label> 
+            <input type="email" class="form-control" id="inputEmail"> </div> 
+            </div> 
+            <div class="row mb-3"> 
+            <div class="col-md-6"> 
+            <label for="inputDate" class="form-label">Date</label> 
+            <input type="date" class="form-control" id="inputDate"> 
+            </div> 
+            <div class="col-md-6"> 
+            <label for="inputTime" class="form-label">Time</label> 
+            <input type="time" class="form-control" id="inputTime">
+            </div> 
+            </div> 
+            <div class="row mb-3"> 
+            <div class="col-md-12">
+            <label for="inputMessage" class="form-label">Tell us more</label> 
+            <textarea class="form-control" id="inputMessage" style="height: 200px;" rows="3"></textarea>
+            </div> 
+            </div> 
+            <button class="btn btn-info">SEND</button>
+           </form>
+          </div>  
+        </section>  
+    </div>          
+    </div>  
+    
+    
 
 
   
-    
-</style>
-<body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <a class="navbar-brand" href="#">Organic</a> 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"><i class="fas fa-hamburger"></i></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav m-auto my-2 my-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active"  href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#trending">TRENDING</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  store
-                </a>
-                
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#organic">Organic</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">contact</a>
-              </li>
+    <footer>
+        <div class="footer-col">
+            <img src="https://cooking-healthy-food.web.app/assets/chf-logo-CG4Qoem8.svg">
+        </div>
+        <div class="footer-col">
+            <h4>ADDRESS</h4>
+            <p>956 ABCD street,</p>
+            <p>surat,gujarat</p>
+        </div>
+        <div class="footer-col">
+            <h4>WE ARE OPEN</h4>
+            <P>mon-fri:8am-11pm</P>
+            <p>sun:10am-4pm</p>
+            <p>sat:10pm-6pm</p>
+        </div>
+        <div class="footer-col">
+            <h4>RESERVATION</h4>
+            <P>+916382791462</P>
+            <P>abcdef@gmail.com</P>
+        </div>
+        <div class="footer-col">
+            <h4>STAY CONNECTED</h4>
+            <ul>
+                <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="icon"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
             </ul>
-            <form class="d-flex">
-              <input class=" px-2 search" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn0" type="submit">Search</button>
-            </form>
-          </div>
         </div>
-      </nav>
-      <section class="main">
-        <div class="container ">
-            <div class="row ">
-                <div class="col-lg-7 ">
-                  <h1>Nature Has Always Cared For Us!</h1>
-                  <button class="btn1 mt-3">More Tips</button>
-
-                </div>
-            </div>
-        </div>
-      </section>
-      <section class="new">
-        <div class="container py-5">
-          <div class="row pt-5">
-            <div class="col-lg-7 m-auto">
-              <div class="row text-align">
-              <div class="col-lg-4">
-                <img src="https://img.freepik.com/premium-photo/fruits-pencil-art-coloring-page_776894-33149.jpg?w=300" class="img-fluid">
-                
-                <h1>Natural</h1>
-
-              </div>
-              <div class="col-lg-4 pb-3">
-                <img src="https://th.bing.com/th/id/OIP.k04e-HgHflOQZw9a-EVqHwHaHa?rs=1&pid=ImgDetMain" height="500px" class="img-fluid">
-
-                <h1>Organic</h1>
-
-              </div>
-              <div class="col-lg-4 pb-3">
-                <img src="https://img.freepik.com/premium-vector/drawing-tree-with-word-tree-it_951778-73969.jpg" height="500px" class="img-fluid">
-
-                <h1>Healthy</h1>
-
-              </div>
-            </div>
-            </div>
-          </div>
-        </div>
-
-      </section>
-      <section class="products">
-        <div class="container py-5">
-          <div class="row py-5 m-auto text-centre">
-            <div class="col-lg-5 m-auto text-centre">
-              <h1>What's a Trending</h1>
-              <h6 style="color:red">Be Healthy Organic Food</h6>
-
-            </div>
-            <div class="row">
-              <div class="col-lg-3 text-centre">
-                <div class="card border-0 bg-light mb-2">
-                  <div class="card-body">
-                    <img src="https://m.media-amazon.com/images/I/91aCyFGW5eL._SL1500_.jpg" class="img-fluid" height="300px">
-                  </div>
-
-                </div>
-                <h6>Energy Food</h6>
-                <p>$39.99</p>
-              </div>
-              <div class="col-lg-3 text-centre">
-                <div class="card border-0 bg-light mb-2">
-                  <div class="card-body">
-                    <img src="https://th.bing.com/th/id/OIP.NpxP03-r0a9f3Aj0S_YKRwAAAA?rs=1&pid=ImgDetMain" class="img-fluid" height="300px">
-                  </div>
-
-                </div>
-                <h6>green beans</h6>
-                <p>$39.99</p>
-              </div>
-              <div class="col-lg-3 text-centre">
-                <div class="card border-0 bg-light mb-2">
-                  <div class="card-body">
-                    <img src="https://p.turbosquid.com/ts-thumb/Na/3xsqAt/vHb7PP8w/milky01/png/1551254532/600x600/fit_q87/ac3310e92b5cbc89991349f25809ac3bd3154217/milky01.jpg" class="img-fluid">
-                  </div>
-
-                </div>
-                <h6>healthy milk</h6>
-                <p>$39.99</p>
-              </div>
-              <div class="col-lg-3 text-centre">
-                <div class="card border-0 bg-light mb-2">
-                  <div class="card-body">
-                    <img src="https://www.directwholesale.com.sg/pub/media/catalog/product/cache/27ed4154bc0e5c3c51a580076325aed3/h/t/httpss3-ap-southeast-1.amazonaws.comwww8.fairprice.com.sgfpolmediaimagesproductxl13073592_xl1.jpg" class="img-fluid">
-                  </div>
-
-                </div>
-                <h6>refil pack</h6>
-                <p>$39.99</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-6 text-centre m-auto">
-                <button class="btn1">Click For MOre</button>
-              </div>
-            </div>
-          </div>
-     
-  </div>
-        </div>
-
-      </section>
-      <section class="about">
-        <div class="container py-5">
-          <div class="row py-5">
-            <div class="col-lg-8 m-auto text-centre">
-              <h1>Welcome To Our Organic Food Sociaty</h1>
-              <h6 style="color:red;">Be Healthy Organic Food</h6>
-            </div>
-            <div class="row">
-              <div class="col-lg-4">
-                <img src="https://static.toiimg.com/photo/68546562.cms" class="img-fluid" alt="">
-                <p>Lorem ipsum dolar,sit amet consecteturadipis elit.
-                  Magin blanditis dolorem odit.low eos atque ipsum dolor odio nesciunt!
-                </p>
-
-              </div>
-              <div class="col-lg-4">
-                <img src="https://www.youngisthan.in/wp-content/uploads/2017/11/Fruits-day-1.jpg" class="img-fluid" alt="">
-                <h5>Best Quality Product</h5>
-                <p>Lorem ipsum dolar,sit amet consecteturadipis elit.
-                  Magin blanditis dolorem odit.low eos atque ipsum dolor odio nesciunt!
-                </p>
-
-            </div>
-            <div class="col-lg-4">
-              <img src="https://static.toiimg.com/photo/68546562.cms" class="img-fluid" alt="">
-              <h5>Best Quality Product</h5>
-              <p>Lorem ipsum dolar,sit amet consecteturadipis elit.
-                Magin blanditis dolorem odit.low eos atque ipsum dolor odio nesciunt!
-              </p>
-
-          </div>
-        </div>
-        <div class="row pt-3">
-          <div class="col-lg-6 text-centre m-auto">
-            <button class="btn1">SHOP MORE</button>
-          </div>
-        </div>
-      </section>
-<section class="shop">
-  <div class="container">
-    <div class="row py-5">
-      <div class="col-lg-8 m-auto text-centre">
-        <h1>Explore Your Store</h1>
-        <h6 style="color:red;">pick your product from our store</h6>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-3 text-centre">
-        <div class="card border-0 bg-light mb-2">
-          <div class="card-body">
-            <img src="https://m.media-amazon.com/images/I/91aCyFGW5eL._SL1500_.jpg" class="img-fluid" height="300px">
-          </div>
-
-        </div>
-        <h6>Energy Food</h6>
-        <p>$39.99</p>
-      </div>
-      <div class="col-lg-3 text-centre">
-        <div class="card border-0 bg-light mb-2">
-          <div class="card-body">
-            <img src="https://www.directwholesale.com.sg/pub/media/catalog/product/cache/27ed4154bc0e5c3c51a580076325aed3/h/t/httpss3-ap-southeast-1.amazonaws.comwww8.fairprice.com.sgfpolmediaimagesproductxl13073592_xl1.jpg" class="img-fluid">
-          </div>
-
-        </div>
-        <h6>refil pack</h6>
-        <p>$39.99</p>
-      </div>
-      <div class="col-lg-3 text-centre">
-        <div class="card border-0 bg-light mb-2">
-          <div class="card-body">
-            <img src="https://th.bing.com/th/id/OIP.NpxP03-r0a9f3Aj0S_YKRwAAAA?rs=1&pid=ImgDetMain" class="img-fluid" height="300px">
-          </div>
-
-        </div>
-        <h6>green beans</h6>
-        <p>$39.99</p>
-      </div>
-      <div class="col-lg-3 text-centre">
-        <div class="card border-0 bg-light mb-2">
-          <div class="card-body">
-            <img src="https://p.turbosquid.com/ts-thumb/Na/3xsqAt/vHb7PP8w/milky01/png/1551254532/600x600/fit_q87/ac3310e92b5cbc89991349f25809ac3bd3154217/milky01.jpg" class="img-fluid">
-          </div>
-
-        </div>
-        <h6>healthy milk</h6>
-        <p>$39.99</p>
-      </div>
-      <div class="col-lg-3 text-centre">
-        <div class="card border-0 bg-light mb-2">
-          <div class="card-body">
-            <img src="https://p.turbosquid.com/ts-thumb/Na/3xsqAt/vHb7PP8w/milky01/png/1551254532/600x600/fit_q87/ac3310e92b5cbc89991349f25809ac3bd3154217/milky01.jpg" class="img-fluid">
-          </div>
-
-        </div>
-        <h6>healthy milk</h6>
-        <p>$39.99</p>
-      </div>
-      <div class="col-lg-3 text-centre">
-        <div class="card border-0 bg-light mb-2">
-          <div class="card-body">
-            <img src="https://th.bing.com/th/id/OIP.NpxP03-r0a9f3Aj0S_YKRwAAAA?rs=1&pid=ImgDetMain" class="img-fluid" height="300px">
-          </div>
-
-        </div>
-        <h6>green beans</h6>
-        <p>$39.99</p>
-      </div>
-      <div class="col-lg-3 text-centre">
-        <div class="card border-0 bg-light mb-2">
-          <div class="card-body">
-            <img src="https://m.media-amazon.com/images/I/91aCyFGW5eL._SL1500_.jpg" class="img-fluid" height="300px">
-          </div>
-
-        </div>
-        <h6>Energy Food</h6>
-        <p>$39.99</p>
-      </div>
-      <div class="col-lg-3 text-centre">
-        <div class="card border-0 bg-light mb-2">
-          <div class="card-body">
-            <img src="https://www.directwholesale.com.sg/pub/media/catalog/product/cache/27ed4154bc0e5c3c51a580076325aed3/h/t/httpss3-ap-southeast-1.amazonaws.comwww8.fairprice.com.sgfpolmediaimagesproductxl13073592_xl1.jpg" class="img-fluid">
-          </div>
-
-        </div>
-        <h6>refil pack</h6>
-        <p>$39.99</p>
-      </div>
-      <div class="col-lg-3 text-centre">
-        <div class="card border-0 bg-light mb-2">
-          <div class="card-body">
-            <img src="https://m.media-amazon.com/images/I/91aCyFGW5eL._SL1500_.jpg" class="img-fluid" height="300px">
-          </div>
-
-        </div>
-        <h6>Energy Food</h6>
-        <p>$39.99</p>
-      </div>
-      <div class="col-lg-3 text-centre">
-        <div class="card border-0 bg-light mb-2">
-          <div class="card-body">
-            <img src="https://www.directwholesale.com.sg/pub/media/catalog/product/cache/27ed4154bc0e5c3c51a580076325aed3/h/t/httpss3-ap-southeast-1.amazonaws.comwww8.fairprice.com.sgfpolmediaimagesproductxl13073592_xl1.jpg" class="img-fluid">
-          </div>
-
-        </div>
-        <h6>refil pack</h6>
-        <p>$39.99</p>
-      </div>
-      <div class="col-lg-3 text-centre">
-        <div class="card border-0 bg-light mb-2">
-          <div class="card-body">
-            <img src="https://p.turbosquid.com/ts-thumb/Na/3xsqAt/vHb7PP8w/milky01/png/1551254532/600x600/fit_q87/ac3310e92b5cbc89991349f25809ac3bd3154217/milky01.jpg" class="img-fluid">
-          </div>
-
-        </div>
-        <h6>healthy milk</h6>
-        <p>$39.99</p>
-      </div>
-      <div class="col-lg-3 text-centre">
-        <div class="card border-0 bg-light mb-2">
-          <div class="card-body">
-            <img src="https://th.bing.com/th/id/OIP.NpxP03-r0a9f3Aj0S_YKRwAAAA?rs=1&pid=ImgDetMain" class="img-fluid" height="300px">
-          </div>
-
-        </div>
-        <h6>green beans</h6>
-        <p>$39.99</p>
-      </div>
-
- 
- 
- 
-     
-     
-      
-     
-  </div>
-</section> 
-<section class="apple py-5">
-  <div class="container text-white py-5">
-    <div class="row py-5">
-      <div class="col-lg-6">
-        <h1 class="font-weight-bold py-3">Unlock Your Potential With 
-          Good Nutrion</h1>
-        <h6>Be Healthy Organic Food</h6>
-        <button class="btn1 mt-3">More From Us</button>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="contact py-5 text-centre">
-  <div class="container py-5 m-auto text-centre">
-    <div class="row text-centre">
-      <div class="col-lg-5 text-centre">
-        <h1>Contact us</h1>
-        <h6 style="color:red;">Always Be In Touch With Us</h6>
-      </div>
-    </div>
-    <div class="row py-5">
-      <div class="col-lg-9 m-auto">
-        <div class="row">
-          <div class="col-lg-4">
-            <h6>LOCATION</h6>
-            <p>New York 0911 Street DC</p>
-
-
-            <h6>PHONE</h6>  
-            <P>03444-24359555</P>  
-            
-            <h6>EMAIL</h6>
-            <P>rezwanjhony@gmail.com</P>
-           </div>
-           <div class="col-lg-7">
-            <div class="row">
-              <div class="col-lg-6">
-                <input type="text" class="form-control bg-light" placeholder="first name">
-              </div>
-              <div class="col-lg-6">
-                <input type="text" class="form-control bg-light" placeholder="last name">
-              </div>
-            </div>
-            <div class="row">
-            <div class="col-lg-12 py-3">
-              <textarea name=""  class="form-control bg-light" placeholder="enter your name" id="" cols="10" rows="5"></textarea>
-            </div>
-
-            </div>
-            <button class="btn1">submit</button>
-           </div>
-        </div>
-
-
-      </div>
-    </div>
-  </div>
-</section>   
-<section class="news py-5">
-  <div class="container py-5">
-    <div class="row ">
-      <div class="col-lg-9 m-auto text-centre">
-        <h1>join our secret society</h1>
-        <input type="text" class="px-3" placeholder="enter your email">
-        <button class="btn2">submit</button>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-11">
-        <div class="row">
-     
-      <div class="col-lg-3 py-3">
-        <h5 class="pb-3">CUSTOMER CARE</h5>
-        <p>Regular</p>
-        <p>On Time</p>
-        <p>Always Care</p>
-      </div>
-      <div class="col-lg-3 py-3">
-        <h5 class="pb-3">FAQ's</h5>
-        <p>No E-Charges</p>
-        <p>Shopping&Delivery</p>
-        <p>Always Care</p>
-      </div>
-      <div class="col-lg-3 py-3">
-        <h5 class="pb-3">OUR COMPANT</h5>
-        <p>About</p>
-        <p>New Food</p>
-        <p>Product</p>
-      </div>
-      <div class="col-lg-3 py-3">
-        <h5 class="pb-3">CUSTOMER CARE</h5>
-        <i class="fab fa-facebook"></i></a>
-        <i class="fab fa-youtube"></i></a>
-       <i class="fab fa-twitter"></i></a>
-      <i class="fab fa-instagram"></i></a>
+    </footer>
        
 
 
-      </div>
-    </div>
+      
+          
+    
+
+   
+
+   
+   
+       
+        
+
+        
+
     </div>
 
-  </div>
-  <hr>
-  <p class="text-centre">copyright 02021 All rights reserved | This template is made with by proweb</p>
-  </div>
-</section>
+   
 </body>
-</html>
+</html>              
